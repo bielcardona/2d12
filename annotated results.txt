@@ -1,0 +1,722 @@
+--------------------
+1 Group( <identity> of ... )
+>> 1
+--
+phi		Pcgs([  ]) -> [  ]
+Kv2,Kv3,Ku	[  ]	[  ]	[  ]
+>>			k		k		k
+--------------------
+--------------------
+C2 Group( [ f1 ] )
+>> C2A
+--
+phi		Pcgs([ f1 ]) -> [ f1 ]
+Kv2,Kv3,Ku	[ f1 ]	[  ]	[ f1 ]
+>>			k		K		k
+--------------------
+--------------------
+C2 Group( [ f2 ] )
+>> C2B
+--
+phi		Pcgs([ f2 ]) -> [ f2 ]
+Kv2,Kv3,Ku	[ f2 ]	[ f2 ]	[  ]
+>> 			k		k		K
+--------------------
+--------------------
+C2 Group( [ f1*f2 ] )
+>> C2C
+--
+phi		Pcgs([ f1*f2 ]) -> [ f1*f2 ]
+Kv2,Kv3,Ku	[ f1*f2 ]	[  ]	[  ]
+>>			k			K		K
+--------------------
+--------------------
+C2 Group( [ f3 ] )
+>> C2D
+--
+phi		Pcgs([ f3 ]) -> [ f3 ]
+Kv2,Kv3,Ku	[  ]	[ f3 ]	[ f3 ]
+>>			K		k		k
+--------------------
+--------------------
+C2 Group( [ f1*f3 ] )
+>> C2E
+--
+phi		Pcgs([ f1*f3 ]) -> [ f1*f3 ]
+Kv2,Kv3,Ku	[  ]	[  ]	[ f1*f3 ]
+>>			K		K		k
+--------------------
+--------------------
+C2 Group( [ f2*f3 ] )
+>> C2F
+--
+phi		Pcgs([ f2*f3 ]) -> [ f2*f3 ]
+Kv2,Kv3,Ku	[  ]	[ f2*f3 ]	[  ]
+>>			K		k			K
+--------------------
+--------------------
+C2 Group( [ f1*f2*f3 ] )
+>> C2G
+--
+phi		Pcgs([ f1*f2*f3 ]) -> [ f1*f2*f3 ]
+Kv2,Kv3,Ku	[  ]	[  ]	[  ]
+>>			K		K		K
+--------------------
+--------------------
+C3 Group( [ f4 ] )
+>> C3
+--
+phi		Pcgs([ f4 ]) -> [ f4 ]
+Kv2,Kv3,Ku	[ f4 ]	[ f4 ]	[ f4 ]
+>>			k		k		k
+--------------------
+--------------------
+C2 x C2 Group( [ f2, f3 ] )
+--
+phi		Pcgs([ f2, f3 ]) -> [ f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f3 ]	[ f3, f2*f3 ]	[ f2*f3 ]
+phi		Pcgs([ f2, f3 ]) -> [ f2*f3, f3 ]
+Kv2,Kv3,Ku	[ f2*f3 ]	[ f2*f3, f3 ]	[ f3 ]
+phi		Pcgs([ f2, f3 ]) -> [ f2, f2*f3 ]
+Kv2,Kv3,Ku	[ f2 ]	[ f2, f2*f3 ]	[ f2*f3 ]
+phi		Pcgs([ f2, f3 ]) -> [ f2*f3, f2 ]
+Kv2,Kv3,Ku	[ f2*f3 ]	[ f2*f3, f2 ]	[ f2 ]
+phi		Pcgs([ f2, f3 ]) -> [ f2, f3 ]
+Kv2,Kv3,Ku	[ f2 ]	[ f2, f3 ]	[ f3 ]
+phi		Pcgs([ f2, f3 ]) -> [ f3, f2 ]
+Kv2,Kv3,Ku	[ f3 ]	[ f3, f2 ]	[ f2 ]
+--------------------
+--------------------
+C2 x C2 Group( [ f1, f3 ] )
+--
+phi		Pcgs([ f1, f3 ]) -> [ f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f3 ]	[ f1*f3 ]	[ f3, f1*f3 ]
+phi		Pcgs([ f1, f3 ]) -> [ f1*f3, f3 ]
+Kv2,Kv3,Ku	[ f1*f3 ]	[ f3 ]	[ f1*f3, f3 ]
+phi		Pcgs([ f1, f3 ]) -> [ f1, f1*f3 ]
+Kv2,Kv3,Ku	[ f1 ]	[ f1*f3 ]	[ f1, f1*f3 ]
+phi		Pcgs([ f1, f3 ]) -> [ f1*f3, f1 ]
+Kv2,Kv3,Ku	[ f1*f3 ]	[ f1 ]	[ f1*f3, f1 ]
+phi		Pcgs([ f1, f3 ]) -> [ f1, f3 ]
+Kv2,Kv3,Ku	[ f1 ]	[ f3 ]	[ f1, f3 ]
+phi		Pcgs([ f1, f3 ]) -> [ f3, f1 ]
+Kv2,Kv3,Ku	[ f3 ]	[ f1 ]	[ f3, f1 ]
+--------------------
+--------------------
+C2 x C2 Group( [ f1*f2, f3 ] )
+--
+phi		Pcgs([ f1*f2, f3 ]) -> [ f1*f2, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2 ]	[ f1*f2*f3 ]	[ f1*f2*f3 ]
+phi		Pcgs([ f1*f2, f3 ]) -> [ f1*f2*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f1*f2 ]	[ f1*f2 ]
+phi		Pcgs([ f1*f2, f3 ]) -> [ f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f3 ]	[ f1*f2*f3 ]	[ f1*f2*f3 ]
+phi		Pcgs([ f1*f2, f3 ]) -> [ f1*f2*f3, f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f3 ]	[ f3 ]
+phi		Pcgs([ f1*f2, f3 ]) -> [ f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f3 ]	[ f1*f2 ]	[ f1*f2 ]
+phi		Pcgs([ f1*f2, f3 ]) -> [ f1*f2, f3 ]
+Kv2,Kv3,Ku	[ f1*f2 ]	[ f3 ]	[ f3 ]
+--------------------
+--------------------
+C2 x C2 Group( [ f1, f2 ] )
+--
+phi		Pcgs([ f1, f2 ]) -> [ f2, f1*f2 ]
+Kv2,Kv3,Ku	[ f2, f1*f2 ]	[ f1*f2 ]	[ f2 ]
+phi		Pcgs([ f1, f2 ]) -> [ f1*f2, f2 ]
+Kv2,Kv3,Ku	[ f1*f2, f2 ]	[ f2 ]	[ f1*f2 ]
+phi		Pcgs([ f1, f2 ]) -> [ f1, f1*f2 ]
+Kv2,Kv3,Ku	[ f1, f1*f2 ]	[ f1*f2 ]	[ f1 ]
+phi		Pcgs([ f1, f2 ]) -> [ f1*f2, f1 ]
+Kv2,Kv3,Ku	[ f1*f2, f1 ]	[ f1 ]	[ f1*f2 ]
+phi		Pcgs([ f1, f2 ]) -> [ f1, f2 ]
+Kv2,Kv3,Ku	[ f1, f2 ]	[ f2 ]	[ f1 ]
+phi		Pcgs([ f1, f2 ]) -> [ f2, f1 ]
+Kv2,Kv3,Ku	[ f2, f1 ]	[ f1 ]	[ f2 ]
+--------------------
+--------------------
+C2 x C2 Group( [ f1*f3, f2 ] )
+--
+phi		Pcgs([ f1*f3, f2 ]) -> [ f1*f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f1*f2*f3 ]	[ f1*f3 ]
+phi		Pcgs([ f1*f3, f2 ]) -> [ f1*f2*f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f1*f3 ]	[ f1*f3 ]	[ f1*f2*f3 ]
+phi		Pcgs([ f1*f3, f2 ]) -> [ f2, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f1*f2*f3 ]	[ f2 ]
+phi		Pcgs([ f1*f3, f2 ]) -> [ f1*f2*f3, f2 ]
+Kv2,Kv3,Ku	[ f2 ]	[ f2 ]	[ f1*f2*f3 ]
+phi		Pcgs([ f1*f3, f2 ]) -> [ f2, f1*f3 ]
+Kv2,Kv3,Ku	[ f1*f3 ]	[ f1*f3 ]	[ f2 ]
+phi		Pcgs([ f1*f3, f2 ]) -> [ f1*f3, f2 ]
+Kv2,Kv3,Ku	[ f2 ]	[ f2 ]	[ f1*f3 ]
+--------------------
+--------------------
+C2 x C2 Group( [ f1, f2*f3 ] )
+--
+phi		Pcgs([ f1, f2*f3 ]) -> [ f2*f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f2*f3 ]	[ f1*f2*f3 ]	[ f2*f3 ]
+phi		Pcgs([ f1, f2*f3 ]) -> [ f1*f2*f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f2*f3 ]	[ f1*f2*f3 ]
+phi		Pcgs([ f1, f2*f3 ]) -> [ f1, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1 ]	[ f1*f2*f3 ]	[ f1 ]
+phi		Pcgs([ f1, f2*f3 ]) -> [ f1*f2*f3, f1 ]
+Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f1 ]	[ f1*f2*f3 ]
+phi		Pcgs([ f1, f2*f3 ]) -> [ f1, f2*f3 ]
+Kv2,Kv3,Ku	[ f1 ]	[ f2*f3 ]	[ f1 ]
+phi		Pcgs([ f1, f2*f3 ]) -> [ f2*f3, f1 ]
+Kv2,Kv3,Ku	[ f2*f3 ]	[ f1 ]	[ f2*f3 ]
+--------------------
+--------------------
+C2 x C2 Group( [ f1*f2, f2*f3 ] )
+--
+phi		Pcgs([ f1*f2, f2*f3 ]) -> [ f1*f2, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2 ]	[ f2*f3 ]	[ f1*f3 ]
+phi		Pcgs([ f1*f2, f2*f3 ]) -> [ f1*f2, f1*f3 ]
+Kv2,Kv3,Ku	[ f1*f2 ]	[ f1*f3 ]	[ f2*f3 ]
+phi		Pcgs([ f1*f2, f2*f3 ]) -> [ f1*f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f3 ]	[ f2*f3 ]	[ f1*f2 ]
+phi		Pcgs([ f1*f2, f2*f3 ]) -> [ f1*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f1*f3 ]	[ f1*f2 ]	[ f2*f3 ]
+phi		Pcgs([ f1*f2, f2*f3 ]) -> [ f2*f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f2*f3 ]	[ f1*f3 ]	[ f1*f2 ]
+phi		Pcgs([ f1*f2, f2*f3 ]) -> [ f2*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f2*f3 ]	[ f1*f2 ]	[ f1*f3 ]
+--------------------
+--------------------
+S3 Group( [ f4, f3 ] )
+--
+phi		Pcgs([ f3, f4 ]) -> [ f3, f4 ]
+Kv2,Kv3,Ku	[ f4, f4^2 ]	[ f4, f3 ]	[ f4, f3 ]
+--------------------
+--------------------
+C6 Group( [ f4, f1*f2 ] )
+--
+phi		Pcgs([ f1*f2, f4 ]) -> [ f1*f2, f4 ]
+Kv2,Kv3,Ku	[ f4, f1*f2 ]	[ f4, f4^2 ]	[ f4, f4^2 ]
+--------------------
+--------------------
+S3 Group( [ f4, f1*f3 ] )
+--
+phi		Pcgs([ f1*f3, f4 ]) -> [ f1*f3, f4 ]
+Kv2,Kv3,Ku	[ f4, f4^2 ]	[ f4, f4^2 ]	[ f4, f1*f3 ]
+--------------------
+--------------------
+C6 Group( [ f4, f2 ] )
+--
+phi		Pcgs([ f2, f4 ]) -> [ f2, f4 ]
+Kv2,Kv3,Ku	[ f4, f2 ]	[ f4, f2 ]	[ f4, f4^2 ]
+--------------------
+--------------------
+S3 Group( [ f4, f2*f3 ] )
+--
+phi		Pcgs([ f2*f3, f4 ]) -> [ f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f4, f4^2 ]	[ f4, f2*f3 ]	[ f4, f4^2 ]
+--------------------
+--------------------
+C6 Group( [ f4, f1 ] )
+--
+phi		Pcgs([ f1, f4 ]) -> [ f1, f4 ]
+Kv2,Kv3,Ku	[ f4, f1 ]	[ f4, f4^2 ]	[ f4, f1 ]
+--------------------
+--------------------
+S3 Group( [ f4, f1*f2*f3 ] )
+--
+phi		Pcgs([ f1*f2*f3, f4 ]) -> [ f1*f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f4, f4^2 ]	[ f4, f4^2 ]	[ f4, f4^2 ]
+--------------------
+--------------------
+C2 x C2 x C2 Group( [ f1, f2, f3 ] )
+--
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f2, f1*f3, f1*f2*f3 ]	[ f1*f3, f2*f3, f1*f2 ]	[ f2, f2*f3, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f2, f3, f2*f3 ]	[ f3, f1*f2*f3, f1*f2 ]	[ f2, f1*f2*f3, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f2*f3, f3 ]
+Kv2,Kv3,Ku	[ f2, f1*f2*f3, f1*f3 ]	[ f1*f2*f3, f3, f1*f2 ]	[ f2, f3, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f2*f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f2, f2*f3, f3 ]	[ f2*f3, f1*f3, f1*f2 ]	[ f2, f1*f3, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1*f2, f2*f3 ]
+Kv2,Kv3,Ku	[ f3, f1*f2, f1*f2*f3 ]	[ f1*f2, f2*f3, f1*f3 ]	[ f3, f2*f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f2, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f3, f2, f2*f3 ]	[ f2, f1*f2*f3, f1*f3 ]	[ f3, f1*f2*f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1*f2*f3, f2 ]
+Kv2,Kv3,Ku	[ f3, f1*f2*f3, f1*f2 ]	[ f1*f2*f3, f2, f1*f3 ]	[ f3, f2, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f2*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f3, f2*f3, f2 ]	[ f2*f3, f1*f2, f1*f3 ]	[ f3, f1*f2, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f1*f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f1*f3, f2*f3 ]	[ f1*f3, f1*f2*f3, f2 ]	
+[ f1*f2, f1*f2*f3, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f3, f1*f2*f3 ]	[ f3, f2*f3, f2 ]	[ f1*f2, f2*f3, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f1*f2*f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f1*f2*f3, f3 ]	[ f1*f2*f3, f1*f3, f2 ]	
+[ f1*f2, f1*f3, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f2*f3, f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f2*f3, f1*f3 ]	[ f2*f3, f3, f2 ]	[ f1*f2, f3, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f1*f2, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f3, f1*f2, f2*f3 ]	[ f1*f2, f1*f2*f3, f3 ]	
+[ f1*f3, f1*f2*f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f2, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f3, f2, f1*f2*f3 ]	[ f2, f2*f3, f3 ]	[ f1*f3, f2*f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f1*f2*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f1*f3, f1*f2*f3, f2 ]	[ f1*f2*f3, f1*f2, f3 ]	
+[ f1*f3, f1*f2, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f2*f3, f2 ]
+Kv2,Kv3,Ku	[ f1*f3, f2*f3, f1*f2 ]	[ f2*f3, f2, f3 ]	[ f1*f3, f2, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1*f2, f3 ]
+Kv2,Kv3,Ku	[ f2*f3, f1*f2, f1*f3 ]	[ f1*f2, f3, f1*f2*f3 ]	[ f2*f3, f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1*f3, f2 ]
+Kv2,Kv3,Ku	[ f2*f3, f1*f3, f1*f2 ]	[ f1*f3, f2, f1*f2*f3 ]	[ f2*f3, f2, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f2, f1*f3 ]
+Kv2,Kv3,Ku	[ f2*f3, f2, f3 ]	[ f2, f1*f3, f1*f2*f3 ]	[ f2*f3, f1*f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f2*f3, f3, f2 ]	[ f3, f1*f2, f1*f2*f3 ]	[ f2*f3, f1*f2, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f1*f2, f1*f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f1*f2, f3 ]	[ f1*f2, f1*f3, f2*f3 ]	
+[ f1*f2*f3, f1*f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f1*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f1*f3, f2 ]	[ f1*f3, f1*f2, f2*f3 ]	
+[ f1*f2*f3, f1*f2, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f2, f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f2, f1*f3 ]	[ f2, f3, f2*f3 ]	[ f1*f2*f3, f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f3, f2 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f3, f1*f2 ]	[ f3, f2, f2*f3 ]	[ f1*f2*f3, f2, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f2*f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f1, f2*f3, f1*f2*f3 ]	[ f2*f3, f1*f3, f1*f2 ]	[ f1, f1*f3, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f1*f2*f3, f3 ]
+Kv2,Kv3,Ku	[ f1, f1*f2*f3, f2*f3 ]	[ f1*f2*f3, f3, f1*f2 ]	[ f1, f3, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1, f3, f1*f3 ]	[ f3, f1*f2*f3, f1*f2 ]	[ f1, f1*f2*f3, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f1*f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f1, f1*f3, f3 ]	[ f1*f3, f2*f3, f1*f2 ]	[ f1, f2*f3, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1*f2, f1*f3 ]
+Kv2,Kv3,Ku	[ f3, f1*f2, f1*f2*f3 ]	[ f1*f2, f1*f3, f2*f3 ]	[ f3, f1*f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f3, f1, f1*f3 ]	[ f1, f1*f2*f3, f2*f3 ]	[ f3, f1*f2*f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1*f2*f3, f1 ]
+Kv2,Kv3,Ku	[ f3, f1*f2*f3, f1*f2 ]	[ f1*f2*f3, f1, f2*f3 ]	[ f3, f1, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f3, f1*f3, f1 ]	[ f1*f3, f1*f2, f2*f3 ]	[ f3, f1*f2, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f2*f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f2*f3, f1*f3 ]	[ f2*f3, f1*f2*f3, f1 ]	
+[ f1*f2, f1*f2*f3, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f1*f2*f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f1*f2*f3, f3 ]	[ f1*f2*f3, f2*f3, f1 ]	
+[ f1*f2, f2*f3, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f3, f1*f2*f3 ]	[ f3, f1*f3, f1 ]	[ f1*f2, f1*f3, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f1*f3, f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f1*f3, f2*f3 ]	[ f1*f3, f3, f1 ]	[ f1*f2, f3, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f1*f2, f3 ]
+Kv2,Kv3,Ku	[ f1*f3, f1*f2, f2*f3 ]	[ f1*f2, f3, f1*f2*f3 ]	[ f1*f3, f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f2*f3, f1 ]
+Kv2,Kv3,Ku	[ f1*f3, f2*f3, f1*f2 ]	[ f2*f3, f1, f1*f2*f3 ]	[ f1*f3, f1, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f1, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f3, f1, f3 ]	[ f1, f2*f3, f1*f2*f3 ]	[ f1*f3, f2*f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f1*f3, f3, f1 ]	[ f3, f1*f2, f1*f2*f3 ]	[ f1*f3, f1*f2, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1*f2, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f2*f3, f1*f2, f1*f3 ]	[ f1*f2, f1*f2*f3, f3 ]	
+[ f2*f3, f1*f2*f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1, f1*f3 ]
+Kv2,Kv3,Ku	[ f2*f3, f1, f1*f2*f3 ]	[ f1, f1*f3, f3 ]	[ f2*f3, f1*f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1*f2*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f2*f3, f1*f2*f3, f1 ]	[ f1*f2*f3, f1*f2, f3 ]	
+[ f2*f3, f1*f2, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1*f3, f1 ]
+Kv2,Kv3,Ku	[ f2*f3, f1*f3, f1*f2 ]	[ f1*f3, f1, f3 ]	[ f2*f3, f1, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f1*f2, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f1*f2, f3 ]	[ f1*f2, f2*f3, f1*f3 ]	
+[ f1*f2*f3, f2*f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f2*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f2*f3, f1 ]	[ f2*f3, f1*f2, f1*f3 ]	
+[ f1*f2*f3, f1*f2, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f1, f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f1, f2*f3 ]	[ f1, f3, f1*f3 ]	[ f1*f2*f3, f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f3, f1 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f3, f1*f2 ]	[ f3, f1, f1*f3 ]	[ f1*f2*f3, f1, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f2*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f1, f2*f3, f1*f2*f3 ]	[ f2*f3, f1*f2, f1*f3 ]	[ f1, f1*f2, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f1*f2*f3, f2 ]
+Kv2,Kv3,Ku	[ f1, f1*f2*f3, f2*f3 ]	[ f1*f2*f3, f2, f1*f3 ]	[ f1, f2, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f2, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1, f2, f1*f2 ]	[ f2, f1*f2*f3, f1*f3 ]	[ f1, f1*f2*f3, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f1*f2, f2*f3 ]
+Kv2,Kv3,Ku	[ f1, f1*f2, f2 ]	[ f1*f2, f2*f3, f1*f3 ]	[ f1, f2*f3, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f2, f1*f3, f1*f2*f3 ]	[ f1*f3, f1*f2, f2*f3 ]	[ f2, f1*f2, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f2*f3, f1 ]
+Kv2,Kv3,Ku	[ f2, f1*f2*f3, f1*f3 ]	[ f1*f2*f3, f1, f2*f3 ]	[ f2, f1, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f2, f1, f1*f2 ]	[ f1, f1*f2*f3, f2*f3 ]	[ f2, f1*f2*f3, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f2, f1*f3 ]
+Kv2,Kv3,Ku	[ f2, f1*f2, f1 ]	[ f1*f2, f1*f3, f2*f3 ]	[ f2, f1*f3, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f1*f3, f2 ]
+Kv2,Kv3,Ku	[ f1*f2, f1*f3, f2*f3 ]	[ f1*f3, f2, f1*f2*f3 ]	[ f1*f2, f2, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f2*f3, f1 ]
+Kv2,Kv3,Ku	[ f1*f2, f2*f3, f1*f3 ]	[ f2*f3, f1, f1*f2*f3 ]	[ f1*f2, f1, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f1, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f1, f2 ]	[ f1, f2*f3, f1*f2*f3 ]	[ f1*f2, f2*f3, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f2, f1*f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f2, f1 ]	[ f2, f1*f3, f1*f2*f3 ]	[ f1*f2, f1*f3, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f2*f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f3, f2*f3, f1*f2 ]	[ f2*f3, f1*f2*f3, f1 ]	
+[ f1*f3, f1*f2*f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f1*f2*f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f3, f1*f2*f3, f2 ]	[ f1*f2*f3, f2*f3, f1 ]	
+[ f1*f3, f2*f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f2, f1*f2 ]
+Kv2,Kv3,Ku	[ f1*f3, f2, f1*f2*f3 ]	[ f2, f1*f2, f1 ]	[ f1*f3, f1*f2, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f1*f2, f2 ]
+Kv2,Kv3,Ku	[ f1*f3, f1*f2, f2*f3 ]	[ f1*f2, f2, f1 ]	[ f1*f3, f2, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1*f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f2*f3, f1*f3, f1*f2 ]	[ f1*f3, f1*f2*f3, f2 ]	
+[ f2*f3, f1*f2*f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1*f2*f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f2*f3, f1*f2*f3, f1 ]	[ f1*f2*f3, f1*f3, f2 ]	
+[ f2*f3, f1*f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1, f1*f2 ]
+Kv2,Kv3,Ku	[ f2*f3, f1, f1*f2*f3 ]	[ f1, f1*f2, f2 ]	[ f2*f3, f1*f2, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1*f2, f1 ]
+Kv2,Kv3,Ku	[ f2*f3, f1*f2, f1*f3 ]	[ f1*f2, f1, f2 ]	[ f2*f3, f1, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f1*f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f1*f3, f2 ]	[ f1*f3, f2*f3, f1*f2 ]	
+[ f1*f2*f3, f2*f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f2*f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f2*f3, f1 ]	[ f2*f3, f1*f3, f1*f2 ]	
+[ f1*f2*f3, f1*f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f1, f2 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f1, f2*f3 ]	[ f1, f2, f1*f2 ]	[ f1*f2*f3, f2, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f2, f1 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f2, f1*f3 ]	[ f2, f1, f1*f2 ]	[ f1*f2*f3, f1, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f1*f2*f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f1, f1*f2*f3, f2*f3 ]	[ f1*f2*f3, f1*f3, f2 ]	[ f1, f1*f3, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f2*f3, f3 ]
+Kv2,Kv3,Ku	[ f1, f2*f3, f1*f2*f3 ]	[ f2*f3, f3, f2 ]	[ f1, f3, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f1*f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1, f1*f3, f3 ]	[ f1*f3, f1*f2*f3, f2 ]	[ f1, f1*f2*f3, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f1, f3, f1*f3 ]	[ f3, f2*f3, f2 ]	[ f1, f2*f3, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f2*f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f2, f1*f2*f3, f1*f3 ]	[ f1*f2*f3, f2*f3, f1 ]	[ f2, f2*f3, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f2*f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f2, f2*f3, f3 ]	[ f2*f3, f1*f2*f3, f1 ]	[ f2, f1*f2*f3, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f3, f3 ]
+Kv2,Kv3,Ku	[ f2, f1*f3, f1*f2*f3 ]	[ f1*f3, f3, f1 ]	[ f2, f3, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f2, f3, f2*f3 ]	[ f3, f1*f3, f1 ]	[ f2, f1*f3, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f2, f1*f3 ]
+Kv2,Kv3,Ku	[ f3, f2, f2*f3 ]	[ f2, f1*f3, f1*f2*f3 ]	[ f3, f1*f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1, f2*f3 ]
+Kv2,Kv3,Ku	[ f3, f1, f1*f3 ]	[ f1, f2*f3, f1*f2*f3 ]	[ f3, f2*f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f2*f3, f1 ]
+Kv2,Kv3,Ku	[ f3, f2*f3, f2 ]	[ f2*f3, f1, f1*f2*f3 ]	[ f3, f1, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1*f3, f2 ]
+Kv2,Kv3,Ku	[ f3, f1*f3, f1 ]	[ f1*f3, f2, f1*f2*f3 ]	[ f3, f2, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f2, f3 ]
+Kv2,Kv3,Ku	[ f1*f3, f2, f1*f2*f3 ]	[ f2, f3, f2*f3 ]	[ f1*f3, f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f1, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f3, f1, f3 ]	[ f1, f1*f2*f3, f2*f3 ]	[ f1*f3, f1*f2*f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f1*f2*f3, f1 ]
+Kv2,Kv3,Ku	[ f1*f3, f1*f2*f3, f2 ]	[ f1*f2*f3, f1, f2*f3 ]	[ f1*f3, f1, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f3, f2 ]
+Kv2,Kv3,Ku	[ f1*f3, f3, f1 ]	[ f3, f2, f2*f3 ]	[ f1*f3, f2, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f2, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f2*f3, f2, f3 ]	[ f2, f1*f2*f3, f1*f3 ]	[ f2*f3, f1*f2*f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1, f3 ]
+Kv2,Kv3,Ku	[ f2*f3, f1, f1*f2*f3 ]	[ f1, f3, f1*f3 ]	[ f2*f3, f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1*f2*f3, f2 ]
+Kv2,Kv3,Ku	[ f2*f3, f1*f2*f3, f1 ]	[ f1*f2*f3, f2, f1*f3 ]	[ f2*f3, f2, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f3, f1 ]
+Kv2,Kv3,Ku	[ f2*f3, f3, f2 ]	[ f3, f1, f1*f3 ]	[ f2*f3, f1, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f2, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f2, f1*f3 ]	[ f2, f2*f3, f3 ]	[ f1*f2*f3, f2*f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f1, f1*f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f1, f2*f3 ]	[ f1, f1*f3, f3 ]	[ f1*f2*f3, f1*f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f2*f3, f2 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f2*f3, f1 ]	[ f2*f3, f2, f3 ]	[ f1*f2*f3, f2, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f1*f3, f1 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f1*f3, f2 ]	[ f1*f3, f1, f3 ]	[ f1*f2*f3, f1, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f1*f2*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f1, f1*f2*f3, f2*f3 ]	[ f1*f2*f3, f1*f2, f3 ]	[ f1, f1*f2, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f2*f3, f2 ]
+Kv2,Kv3,Ku	[ f1, f2*f3, f1*f2*f3 ]	[ f2*f3, f2, f3 ]	[ f1, f2, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f1*f2, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1, f1*f2, f2 ]	[ f1*f2, f1*f2*f3, f3 ]	[ f1, f1*f2*f3, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f2, f2*f3 ]
+Kv2,Kv3,Ku	[ f1, f2, f1*f2 ]	[ f2, f2*f3, f3 ]	[ f1, f2*f3, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f2, f3, f2*f3 ]	[ f3, f1*f2, f1*f2*f3 ]	[ f2, f1*f2, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1, f2*f3 ]
+Kv2,Kv3,Ku	[ f2, f1, f1*f2 ]	[ f1, f2*f3, f1*f2*f3 ]	[ f2, f2*f3, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f2*f3, f1 ]
+Kv2,Kv3,Ku	[ f2, f2*f3, f3 ]	[ f2*f3, f1, f1*f2*f3 ]	[ f2, f1, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f2, f3 ]
+Kv2,Kv3,Ku	[ f2, f1*f2, f1 ]	[ f1*f2, f3, f1*f2*f3 ]	[ f2, f3, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1*f2*f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f3, f1*f2*f3, f1*f2 ]	[ f1*f2*f3, f2*f3, f1 ]	[ f3, f2*f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f2*f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f3, f2*f3, f2 ]	[ f2*f3, f1*f2*f3, f1 ]	[ f3, f1*f2*f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1*f2, f2 ]
+Kv2,Kv3,Ku	[ f3, f1*f2, f1*f2*f3 ]	[ f1*f2, f2, f1 ]	[ f3, f2, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f2, f1*f2 ]
+Kv2,Kv3,Ku	[ f3, f2, f2*f3 ]	[ f2, f1*f2, f1 ]	[ f3, f1*f2, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f3, f2 ]
+Kv2,Kv3,Ku	[ f1*f2, f3, f1*f2*f3 ]	[ f3, f2, f2*f3 ]	[ f1*f2, f2, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f1*f2*f3, f1 ]
+Kv2,Kv3,Ku	[ f1*f2, f1*f2*f3, f3 ]	[ f1*f2*f3, f1, f2*f3 ]	[ f1*f2, f1, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f1, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f1, f2 ]	[ f1, f1*f2*f3, f2*f3 ]	[ f1*f2, f1*f2*f3, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f2, f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f2, f1 ]	[ f2, f3, f2*f3 ]	[ f1*f2, f3, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f2*f3, f3, f2 ]	[ f3, f1*f2*f3, f1*f2 ]	[ f2*f3, f1*f2*f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1*f2*f3, f3 ]
+Kv2,Kv3,Ku	[ f2*f3, f1*f2*f3, f1 ]	[ f1*f2*f3, f3, f1*f2 ]	[ f2*f3, f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1, f2 ]
+Kv2,Kv3,Ku	[ f2*f3, f1, f1*f2*f3 ]	[ f1, f2, f1*f2 ]	[ f2*f3, f2, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f2, f1 ]
+Kv2,Kv3,Ku	[ f2*f3, f2, f3 ]	[ f2, f1, f1*f2 ]	[ f2*f3, f1, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f3, f1*f2 ]	[ f3, f2*f3, f2 ]	[ f1*f2*f3, f2*f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f1, f1*f2 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f1, f2*f3 ]	[ f1, f1*f2, f2 ]	[ f1*f2*f3, f1*f2, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f2*f3, f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f2*f3, f1 ]	[ f2*f3, f3, f2 ]	[ f1*f2*f3, f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f1*f2, f1 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f1*f2, f3 ]	[ f1*f2, f1, f2 ]	[ f1*f2*f3, f1, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f1, f3, f1*f3 ]	[ f3, f1*f2, f1*f2*f3 ]	[ f1, f1*f2, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f2, f1*f3 ]
+Kv2,Kv3,Ku	[ f1, f2, f1*f2 ]	[ f2, f1*f3, f1*f2*f3 ]	[ f1, f1*f3, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f1*f3, f2 ]
+Kv2,Kv3,Ku	[ f1, f1*f3, f3 ]	[ f1*f3, f2, f1*f2*f3 ]	[ f1, f2, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f1*f2, f3 ]
+Kv2,Kv3,Ku	[ f1, f1*f2, f2 ]	[ f1*f2, f3, f1*f2*f3 ]	[ f1, f3, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f2*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f2, f1*f2*f3, f1*f3 ]	[ f1*f2*f3, f1*f2, f3 ]	[ f2, f1*f2, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f3, f1 ]
+Kv2,Kv3,Ku	[ f2, f1*f3, f1*f2*f3 ]	[ f1*f3, f1, f3 ]	[ f2, f1, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f2, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f2, f1*f2, f1 ]	[ f1*f2, f1*f2*f3, f3 ]	[ f2, f1*f2*f3, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1, f1*f3 ]
+Kv2,Kv3,Ku	[ f2, f1, f1*f2 ]	[ f1, f1*f3, f3 ]	[ f2, f1*f3, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1*f2*f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f3, f1*f2*f3, f1*f2 ]	[ f1*f2*f3, f1*f3, f2 ]	[ f3, f1*f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1*f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f3, f1*f3, f1 ]	[ f1*f3, f1*f2*f3, f2 ]	[ f3, f1*f2*f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1*f2, f1 ]
+Kv2,Kv3,Ku	[ f3, f1*f2, f1*f2*f3 ]	[ f1*f2, f1, f2 ]	[ f3, f1, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1, f1*f2 ]
+Kv2,Kv3,Ku	[ f3, f1, f1*f3 ]	[ f1, f1*f2, f2 ]	[ f3, f1*f2, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f1*f2*f3, f2 ]
+Kv2,Kv3,Ku	[ f1*f2, f1*f2*f3, f3 ]	[ f1*f2*f3, f2, f1*f3 ]	[ f1*f2, f2, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f3, f1 ]
+Kv2,Kv3,Ku	[ f1*f2, f3, f1*f2*f3 ]	[ f3, f1, f1*f3 ]	[ f1*f2, f1, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f2, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f2, f1 ]	[ f2, f1*f2*f3, f1*f3 ]	[ f1*f2, f1*f2*f3, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f1, f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f1, f2 ]	[ f1, f3, f1*f3 ]	[ f1*f2, f3, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f1*f2*f3, f3 ]
+Kv2,Kv3,Ku	[ f1*f3, f1*f2*f3, f2 ]	[ f1*f2*f3, f3, f1*f2 ]	[ f1*f3, f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f3, f3, f1 ]	[ f3, f1*f2*f3, f1*f2 ]	[ f1*f3, f1*f2*f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f2, f1 ]
+Kv2,Kv3,Ku	[ f1*f3, f2, f1*f2*f3 ]	[ f2, f1, f1*f2 ]	[ f1*f3, f1, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f1, f2 ]
+Kv2,Kv3,Ku	[ f1*f3, f1, f3 ]	[ f1, f2, f1*f2 ]	[ f1*f3, f2, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f3, f1*f2 ]	[ f3, f1*f3, f1 ]	[ f1*f2*f3, f1*f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f2, f1*f2 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f2, f1*f3 ]	[ f2, f1*f2, f1 ]	[ f1*f2*f3, f1*f2, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f1*f3, f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f1*f3, f2 ]	[ f1*f3, f3, f1 ]	[ f1*f2*f3, f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2*f3, f1*f2, f2 ]
+Kv2,Kv3,Ku	[ f1*f2*f3, f1*f2, f3 ]	[ f1*f2, f2, f1 ]	[ f1*f2*f3, f2, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f1*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f1, f1*f3, f3 ]	[ f1*f3, f1*f2, f2*f3 ]	[ f1, f1*f2, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f1*f2, f1*f3 ]
+Kv2,Kv3,Ku	[ f1, f1*f2, f2 ]	[ f1*f2, f1*f3, f2*f3 ]	[ f1, f1*f3, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f3, f2 ]
+Kv2,Kv3,Ku	[ f1, f3, f1*f3 ]	[ f3, f2, f2*f3 ]	[ f1, f2, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1, f2, f3 ]
+Kv2,Kv3,Ku	[ f1, f2, f1*f2 ]	[ f2, f3, f2*f3 ]	[ f1, f3, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f2*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f2, f2*f3, f3 ]	[ f2*f3, f1*f2, f1*f3 ]	[ f2, f1*f2, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f2, f2*f3 ]
+Kv2,Kv3,Ku	[ f2, f1*f2, f1 ]	[ f1*f2, f2*f3, f1*f3 ]	[ f2, f2*f3, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f3, f1 ]
+Kv2,Kv3,Ku	[ f2, f3, f2*f3 ]	[ f3, f1, f1*f3 ]	[ f2, f1, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1, f3 ]
+Kv2,Kv3,Ku	[ f2, f1, f1*f2 ]	[ f1, f3, f1*f3 ]	[ f2, f3, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f2*f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f3, f2*f3, f2 ]	[ f2*f3, f1*f3, f1*f2 ]	[ f3, f1*f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1*f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f3, f1*f3, f1 ]	[ f1*f3, f2*f3, f1*f2 ]	[ f3, f2*f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f2, f1 ]
+Kv2,Kv3,Ku	[ f3, f2, f2*f3 ]	[ f2, f1, f1*f2 ]	[ f3, f1, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f3, f1, f2 ]
+Kv2,Kv3,Ku	[ f3, f1, f1*f3 ]	[ f1, f2, f1*f2 ]	[ f3, f2, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f2*f3, f2 ]
+Kv2,Kv3,Ku	[ f1*f2, f2*f3, f1*f3 ]	[ f2*f3, f2, f3 ]	[ f1*f2, f2, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f1*f3, f1 ]
+Kv2,Kv3,Ku	[ f1*f2, f1*f3, f2*f3 ]	[ f1*f3, f1, f3 ]	[ f1*f2, f1, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f2, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f2, f1 ]	[ f2, f2*f3, f3 ]	[ f1*f2, f2*f3, f1*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f2, f1, f1*f3 ]
+Kv2,Kv3,Ku	[ f1*f2, f1, f2 ]	[ f1, f1*f3, f3 ]	[ f1*f2, f1*f3, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f2*f3, f3 ]
+Kv2,Kv3,Ku	[ f1*f3, f2*f3, f1*f2 ]	[ f2*f3, f3, f2 ]	[ f1*f3, f3, f1 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f1*f2, f1 ]
+Kv2,Kv3,Ku	[ f1*f3, f1*f2, f2*f3 ]	[ f1*f2, f1, f2 ]	[ f1*f3, f1, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f3, f3, f1 ]	[ f3, f2*f3, f2 ]	[ f1*f3, f2*f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f1*f3, f1, f1*f2 ]
+Kv2,Kv3,Ku	[ f1*f3, f1, f3 ]	[ f1, f1*f2, f2 ]	[ f1*f3, f1*f2, f2*f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1*f3, f3 ]
+Kv2,Kv3,Ku	[ f2*f3, f1*f3, f1*f2 ]	[ f1*f3, f3, f1 ]	[ f2*f3, f3, f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f1*f2, f2 ]
+Kv2,Kv3,Ku	[ f2*f3, f1*f2, f1*f3 ]	[ f1*f2, f2, f1 ]	[ f2*f3, f2, f3 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f2*f3, f3, f2 ]	[ f3, f1*f3, f1 ]	[ f2*f3, f1*f3, f1*f2 ]
+phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f2, f1*f2 ]
+Kv2,Kv3,Ku	[ f2*f3, f2, f3 ]	[ f2, f1*f2, f1 ]	[ f2*f3, f1*f2, f1*f3 ]
+--------------------
+--------------------
+D12 Group( [ f4, f2, f3 ] )
+--
+phi		Pcgs([ f2, f3, f4 ]) -> [ f2, f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	[ f2, f2*f3, f4 ]	
+[ f2*f3, f4, f2*f3*f4, f4^2, f2*f3*f4^2 ]
+phi		Pcgs([ f2, f3, f4 ]) -> [ f2, f3, f4 ]
+Kv2,Kv3,Ku	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	[ f2, f3, f4 ]	
+[ f3, f4, f3*f4, f4^2, f3*f4^2 ]
+--------------------
+--------------------
+D12 Group( [ f4, f1, f3 ] )
+--
+phi		Pcgs([ f1, f3, f4 ]) -> [ f1, f1*f3, f4 ]
+Kv2,Kv3,Ku	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]	
+[ f1*f3, f4, f1*f3*f4, f4^2, f1*f3*f4^2 ]	[ f1, f4, f1*f3 ]
+phi		Pcgs([ f1, f3, f4 ]) -> [ f1, f3, f4 ]
+Kv2,Kv3,Ku	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]	[ f3, f4, f3*f4, f4^2, f3*f4^2 ]	
+[ f1, f4, f3 ]
+--------------------
+--------------------
+D12 Group( [ f4, f1*f2, f3 ] )
+--
+phi		Pcgs([ f1*f2, f3, f4 ]) -> [ f1*f2, f1*f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f4, f1*f2, f4^2, f1*f2*f4, f1*f2*f4^2 ]	
+[ f1*f2*f3, f4, f1*f2*f3*f4, f4^2, f1*f2*f3*f4^2 ]	
+[ f1*f2*f3, f4, f1*f2*f3*f4, f4^2, f1*f2*f3*f4^2 ]
+phi		Pcgs([ f1*f2, f3, f4 ]) -> [ f1*f2, f3, f4 ]
+Kv2,Kv3,Ku	[ f4, f1*f2, f4^2, f1*f2*f4, f1*f2*f4^2 ]	
+[ f3, f4, f3*f4, f4^2, f3*f4^2 ]	[ f3, f4, f3*f4, f4^2, f3*f4^2 ]
+--------------------
+--------------------
+C6 x C2 Group( [ f4, f1, f2 ] )
+--
+phi		Pcgs([ f1, f2, f4 ]) -> [ f2, f1*f2, f4 ]
+Kv2,Kv3,Ku	[ f2, f1*f2, f4 ]	[ f1*f2, f4, f1*f2*f4, f4^2, f1*f2*f4^2 ]	
+[ f2, f4, f2*f4, f4^2, f2*f4^2 ]
+phi		Pcgs([ f1, f2, f4 ]) -> [ f1*f2, f2, f4 ]
+Kv2,Kv3,Ku	[ f1*f2, f2, f4 ]	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	
+[ f1*f2, f4, f1*f2*f4, f4^2, f1*f2*f4^2 ]
+phi		Pcgs([ f1, f2, f4 ]) -> [ f1, f1*f2, f4 ]
+Kv2,Kv3,Ku	[ f1, f1*f2, f4 ]	[ f1*f2, f4, f1*f2*f4, f4^2, f1*f2*f4^2 ]	
+[ f1, f4, f1*f4, f4^2, f1*f4^2 ]
+phi		Pcgs([ f1, f2, f4 ]) -> [ f1*f2, f1, f4 ]
+Kv2,Kv3,Ku	[ f1*f2, f1, f4 ]	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]	
+[ f1*f2, f4, f1*f2*f4, f4^2, f1*f2*f4^2 ]
+phi		Pcgs([ f1, f2, f4 ]) -> [ f1, f2, f4 ]
+Kv2,Kv3,Ku	[ f1, f2, f4 ]	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	
+[ f1, f4, f1*f4, f4^2, f1*f4^2 ]
+phi		Pcgs([ f1, f2, f4 ]) -> [ f2, f1, f4 ]
+Kv2,Kv3,Ku	[ f2, f1, f4 ]	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]	
+[ f2, f4, f2*f4, f4^2, f2*f4^2 ]
+--------------------
+--------------------
+D12 Group( [ f4, f2, f1*f3 ] )
+--
+phi		Pcgs([ f1*f3, f2, f4 ]) -> [ f1*f2*f3, f2, f4 ]
+Kv2,Kv3,Ku	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	
+[ f4, f1*f2*f3, f4^2, f1*f2*f3*f4, f1*f2*f3*f4^2 ]
+phi		Pcgs([ f1*f3, f2, f4 ]) -> [ f1*f3, f2, f4 ]
+Kv2,Kv3,Ku	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	
+[ f4, f1*f3, f4^2, f1*f3*f4, f1*f3*f4^2 ]
+--------------------
+--------------------
+D12 Group( [ f4, f1, f2*f3 ] )
+--
+phi		Pcgs([ f1, f2*f3, f4 ]) -> [ f1, f1*f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]	
+[ f4, f1*f2*f3, f4^2, f1*f2*f3*f4, f1*f2*f3*f4^2 ]	
+[ f1, f4, f1*f4, f4^2, f1*f4^2 ]
+phi		Pcgs([ f1, f2*f3, f4 ]) -> [ f1, f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]	
+[ f4, f2*f3, f4^2, f2*f3*f4, f2*f3*f4^2 ]	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]
+--------------------
+--------------------
+D12 Group( [ f4, f1*f2, f1*f3 ] )
+--
+phi		Pcgs([ f1*f2, f2*f3, f4 ]) -> [ f1*f2, f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f4, f1*f2, f4^2, f1*f2*f4, f1*f2*f4^2 ]	
+[ f4, f2*f3, f4^2, f2*f3*f4, f2*f3*f4^2 ]	
+[ f4, f1*f3, f4^2, f1*f3*f4, f1*f3*f4^2 ]
+phi		Pcgs([ f1*f2, f2*f3, f4 ]) -> [ f1*f2, f1*f3, f4 ]
+Kv2,Kv3,Ku	[ f4, f1*f2, f4^2, f1*f2*f4, f1*f2*f4^2 ]	
+[ f4, f1*f3, f4^2, f1*f3*f4, f1*f3*f4^2 ]	
+[ f4, f2*f3, f4^2, f2*f3*f4, f2*f3*f4^2 ]
+--------------------
+--------------------
+C2 x C2 x S3 Group( [ f4, f1, f2, f3 ] )
+--
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1, f2, f1*f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f1, f2, f4 ]	[ f2, f1*f2*f3, f4 ]	[ f1, f4, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1, f1*f2, f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f1, f1*f2, f4 ]	[ f1*f2, f2*f3, f4 ]	[ f1, f4, f2*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f2, f1, f1*f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f2, f1, f4 ]	[ f1, f1*f2*f3, f4 ]	[ f2, f4, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f2, f1*f2, f1*f3, f4 ]
+Kv2,Kv3,Ku	[ f2, f1*f2, f4 ]	[ f1*f2, f1*f3, f4 ]	[ f2, f4, f1*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1*f2, f1, f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f1*f2, f1, f4 ]	[ f1, f2*f3, f4 ]	[ f1*f2, f4, f2*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1*f2, f2, f1*f3, f4 ]
+Kv2,Kv3,Ku	[ f1*f2, f2, f4 ]	[ f2, f1*f3, f4 ]	[ f1*f2, f4, f1*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1, f1*f2, f1*f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f1, f1*f2, f4 ]	[ f1*f2, f1*f2*f3, f4 ]	[ f1, f4, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1, f2, f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f1, f2, f4 ]	[ f2, f2*f3, f4 ]	[ f1, f4, f2*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f2, f1, f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f2, f1, f4 ]	[ f1, f2*f3, f4 ]	[ f2, f4, f2*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f2, f1*f2, f3, f4 ]
+Kv2,Kv3,Ku	[ f2, f1*f2, f4 ]	[ f1*f2, f3, f4 ]	[ f2, f4, f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1*f2, f1, f1*f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f1*f2, f1, f4 ]	[ f1, f1*f2*f3, f4 ]	[ f1*f2, f4, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1*f2, f2, f3, f4 ]
+Kv2,Kv3,Ku	[ f1*f2, f2, f4 ]	[ f2, f3, f4 ]	[ f1*f2, f4, f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1, f2, f1*f3, f4 ]
+Kv2,Kv3,Ku	[ f1, f2, f4 ]	[ f2, f1*f3, f4 ]	[ f1, f4, f1*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1, f1*f2, f3, f4 ]
+Kv2,Kv3,Ku	[ f1, f1*f2, f4 ]	[ f1*f2, f3, f4 ]	[ f1, f4, f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f2, f1*f2, f1*f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f2, f1*f2, f4 ]	[ f1*f2, f1*f2*f3, f4 ]	[ f2, f4, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f2, f1, f1*f3, f4 ]
+Kv2,Kv3,Ku	[ f2, f1, f4 ]	[ f1, f1*f3, f4 ]	[ f2, f4, f1*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1*f2, f2, f1*f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f1*f2, f2, f4 ]	[ f2, f1*f2*f3, f4 ]	[ f1*f2, f4, f1*f2*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1*f2, f1, f3, f4 ]
+Kv2,Kv3,Ku	[ f1*f2, f1, f4 ]	[ f1, f3, f4 ]	[ f1*f2, f4, f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1, f1*f2, f1*f3, f4 ]
+Kv2,Kv3,Ku	[ f1, f1*f2, f4 ]	[ f1*f2, f1*f3, f4 ]	[ f1, f4, f1*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1, f2, f3, f4 ]
+Kv2,Kv3,Ku	[ f1, f2, f4 ]	[ f2, f3, f4 ]	[ f1, f4, f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f2, f1*f2, f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f2, f1*f2, f4 ]	[ f1*f2, f2*f3, f4 ]	[ f2, f4, f2*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f2, f1, f3, f4 ]
+Kv2,Kv3,Ku	[ f2, f1, f4 ]	[ f1, f3, f4 ]	[ f2, f4, f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1*f2, f2, f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f1*f2, f2, f4 ]	[ f2, f2*f3, f4 ]	[ f1*f2, f4, f2*f3 ]
+phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1*f2, f1, f1*f3, f4 ]
+Kv2,Kv3,Ku	[ f1*f2, f1, f4 ]	[ f1, f1*f3, f4 ]	[ f1*f2, f4, f1*f3 ]
+--------------------
