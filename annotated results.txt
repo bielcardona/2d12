@@ -8,7 +8,7 @@ Kv2,Kv3,Ku	[  ]	[  ]	[  ]
 --------------------
 --------------------
 C2 Group( [ f1 ] )
->> C2A
+>> C2A(K)
 --
 phi		Pcgs([ f1 ]) -> [ f1 ]
 Kv2,Kv3,Ku	[ f1 ]	[  ]	[ f1 ]
@@ -16,7 +16,7 @@ Kv2,Kv3,Ku	[ f1 ]	[  ]	[ f1 ]
 --------------------
 --------------------
 C2 Group( [ f2 ] )
->> C2B
+>> C2B(K)
 --
 phi		Pcgs([ f2 ]) -> [ f2 ]
 Kv2,Kv3,Ku	[ f2 ]	[ f2 ]	[  ]
@@ -24,7 +24,7 @@ Kv2,Kv3,Ku	[ f2 ]	[ f2 ]	[  ]
 --------------------
 --------------------
 C2 Group( [ f1*f2 ] )
->> C2C
+>> C2C(K)
 --
 phi		Pcgs([ f1*f2 ]) -> [ f1*f2 ]
 Kv2,Kv3,Ku	[ f1*f2 ]	[  ]	[  ]
@@ -32,7 +32,7 @@ Kv2,Kv3,Ku	[ f1*f2 ]	[  ]	[  ]
 --------------------
 --------------------
 C2 Group( [ f3 ] )
->> C2D
+>> C2D(K)
 --
 phi		Pcgs([ f3 ]) -> [ f3 ]
 Kv2,Kv3,Ku	[  ]	[ f3 ]	[ f3 ]
@@ -40,7 +40,7 @@ Kv2,Kv3,Ku	[  ]	[ f3 ]	[ f3 ]
 --------------------
 --------------------
 C2 Group( [ f1*f3 ] )
->> C2E
+>> C2E(K)
 --
 phi		Pcgs([ f1*f3 ]) -> [ f1*f3 ]
 Kv2,Kv3,Ku	[  ]	[  ]	[ f1*f3 ]
@@ -48,7 +48,7 @@ Kv2,Kv3,Ku	[  ]	[  ]	[ f1*f3 ]
 --------------------
 --------------------
 C2 Group( [ f2*f3 ] )
->> C2F
+>> C2F(K)
 --
 phi		Pcgs([ f2*f3 ]) -> [ f2*f3 ]
 Kv2,Kv3,Ku	[  ]	[ f2*f3 ]	[  ]
@@ -56,7 +56,7 @@ Kv2,Kv3,Ku	[  ]	[ f2*f3 ]	[  ]
 --------------------
 --------------------
 C2 Group( [ f1*f2*f3 ] )
->> C2G
+>> C2G(K)
 --
 phi		Pcgs([ f1*f2*f3 ]) -> [ f1*f2*f3 ]
 Kv2,Kv3,Ku	[  ]	[  ]	[  ]
@@ -64,65 +64,19 @@ Kv2,Kv3,Ku	[  ]	[  ]	[  ]
 --------------------
 --------------------
 C3 Group( [ f4 ] )
->> C3
+>> C3(K)
 --
 phi		Pcgs([ f4 ]) -> [ f4 ]
 Kv2,Kv3,Ku	[ f4 ]	[ f4 ]	[ f4 ]
 >>			k		k		k
 --------------------
 --------------------
-C2 x C2 Group( [ f2, f3 ] )
---
-phi		Pcgs([ f2, f3 ]) -> [ f3, f2*f3 ]
-Kv2,Kv3,Ku	[ f3 ]	[ f3, f2*f3 ]	[ f2*f3 ]
-phi		Pcgs([ f2, f3 ]) -> [ f2*f3, f3 ]
-Kv2,Kv3,Ku	[ f2*f3 ]	[ f2*f3, f3 ]	[ f3 ]
-phi		Pcgs([ f2, f3 ]) -> [ f2, f2*f3 ]
-Kv2,Kv3,Ku	[ f2 ]	[ f2, f2*f3 ]	[ f2*f3 ]
-phi		Pcgs([ f2, f3 ]) -> [ f2*f3, f2 ]
-Kv2,Kv3,Ku	[ f2*f3 ]	[ f2*f3, f2 ]	[ f2 ]
-phi		Pcgs([ f2, f3 ]) -> [ f2, f3 ]
-Kv2,Kv3,Ku	[ f2 ]	[ f2, f3 ]	[ f3 ]
-phi		Pcgs([ f2, f3 ]) -> [ f3, f2 ]
-Kv2,Kv3,Ku	[ f3 ]	[ f3, f2 ]	[ f2 ]
---------------------
---------------------
-C2 x C2 Group( [ f1, f3 ] )
---
-phi		Pcgs([ f1, f3 ]) -> [ f3, f1*f3 ]
-Kv2,Kv3,Ku	[ f3 ]	[ f1*f3 ]	[ f3, f1*f3 ]
-phi		Pcgs([ f1, f3 ]) -> [ f1*f3, f3 ]
-Kv2,Kv3,Ku	[ f1*f3 ]	[ f3 ]	[ f1*f3, f3 ]
-phi		Pcgs([ f1, f3 ]) -> [ f1, f1*f3 ]
-Kv2,Kv3,Ku	[ f1 ]	[ f1*f3 ]	[ f1, f1*f3 ]
-phi		Pcgs([ f1, f3 ]) -> [ f1*f3, f1 ]
-Kv2,Kv3,Ku	[ f1*f3 ]	[ f1 ]	[ f1*f3, f1 ]
-phi		Pcgs([ f1, f3 ]) -> [ f1, f3 ]
-Kv2,Kv3,Ku	[ f1 ]	[ f3 ]	[ f1, f3 ]
-phi		Pcgs([ f1, f3 ]) -> [ f3, f1 ]
-Kv2,Kv3,Ku	[ f3 ]	[ f1 ]	[ f3, f1 ]
---------------------
---------------------
-C2 x C2 Group( [ f1*f2, f3 ] )
---
-phi		Pcgs([ f1*f2, f3 ]) -> [ f1*f2, f1*f2*f3 ]
-Kv2,Kv3,Ku	[ f1*f2 ]	[ f1*f2*f3 ]	[ f1*f2*f3 ]
-phi		Pcgs([ f1*f2, f3 ]) -> [ f1*f2*f3, f1*f2 ]
-Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f1*f2 ]	[ f1*f2 ]
-phi		Pcgs([ f1*f2, f3 ]) -> [ f3, f1*f2*f3 ]
-Kv2,Kv3,Ku	[ f3 ]	[ f1*f2*f3 ]	[ f1*f2*f3 ]
-phi		Pcgs([ f1*f2, f3 ]) -> [ f1*f2*f3, f3 ]
-Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f3 ]	[ f3 ]
-phi		Pcgs([ f1*f2, f3 ]) -> [ f3, f1*f2 ]
-Kv2,Kv3,Ku	[ f3 ]	[ f1*f2 ]	[ f1*f2 ]
-phi		Pcgs([ f1*f2, f3 ]) -> [ f1*f2, f3 ]
-Kv2,Kv3,Ku	[ f1*f2 ]	[ f3 ]	[ f3 ]
---------------------
---------------------
 C2 x C2 Group( [ f1, f2 ] )
+>> V4A(K,K1,K2)
 --
 phi		Pcgs([ f1, f2 ]) -> [ f2, f1*f2 ]
-Kv2,Kv3,Ku	[ f2, f1*f2 ]	[ f1*f2 ]	[ f2 ]
+Kv2,Kv3,Ku	[ f2, f1 ]	[ f1*f2 ]	[ f2 ]
+>>			k			K1			K2
 phi		Pcgs([ f1, f2 ]) -> [ f1*f2, f2 ]
 Kv2,Kv3,Ku	[ f1*f2, f2 ]	[ f2 ]	[ f1*f2 ]
 phi		Pcgs([ f1, f2 ]) -> [ f1, f1*f2 ]
@@ -135,26 +89,66 @@ phi		Pcgs([ f1, f2 ]) -> [ f2, f1 ]
 Kv2,Kv3,Ku	[ f2, f1 ]	[ f1 ]	[ f2 ]
 --------------------
 --------------------
-C2 x C2 Group( [ f1*f3, f2 ] )
+C2 x C2 Group( [ f1, f3 ] )
+>> V4B(K,K1,K2)
 --
-phi		Pcgs([ f1*f3, f2 ]) -> [ f1*f3, f1*f2*f3 ]
-Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f1*f2*f3 ]	[ f1*f3 ]
-phi		Pcgs([ f1*f3, f2 ]) -> [ f1*f2*f3, f1*f3 ]
-Kv2,Kv3,Ku	[ f1*f3 ]	[ f1*f3 ]	[ f1*f2*f3 ]
-phi		Pcgs([ f1*f3, f2 ]) -> [ f2, f1*f2*f3 ]
-Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f1*f2*f3 ]	[ f2 ]
-phi		Pcgs([ f1*f3, f2 ]) -> [ f1*f2*f3, f2 ]
-Kv2,Kv3,Ku	[ f2 ]	[ f2 ]	[ f1*f2*f3 ]
-phi		Pcgs([ f1*f3, f2 ]) -> [ f2, f1*f3 ]
-Kv2,Kv3,Ku	[ f1*f3 ]	[ f1*f3 ]	[ f2 ]
-phi		Pcgs([ f1*f3, f2 ]) -> [ f1*f3, f2 ]
-Kv2,Kv3,Ku	[ f2 ]	[ f2 ]	[ f1*f3 ]
+phi		Pcgs([ f1, f3 ]) -> [ f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f3 ]	[ f1*f3 ]	[ f3, f1 ]
+>>			K1		K2			k
+phi		Pcgs([ f1, f3 ]) -> [ f1*f3, f3 ]
+Kv2,Kv3,Ku	[ f1*f3 ]	[ f3 ]	[ f1*f3, f3 ]
+phi		Pcgs([ f1, f3 ]) -> [ f1, f1*f3 ]
+Kv2,Kv3,Ku	[ f1 ]	[ f1*f3 ]	[ f1, f1*f3 ]
+phi		Pcgs([ f1, f3 ]) -> [ f1*f3, f1 ]
+Kv2,Kv3,Ku	[ f1*f3 ]	[ f1 ]	[ f1*f3, f1 ]
+phi		Pcgs([ f1, f3 ]) -> [ f1, f3 ]
+Kv2,Kv3,Ku	[ f1 ]	[ f3 ]	[ f1, f3 ]
+phi		Pcgs([ f1, f3 ]) -> [ f3, f1 ]
+Kv2,Kv3,Ku	[ f3 ]	[ f1 ]	[ f3, f1 ]
+--------------------
+--------------------
+C2 x C2 Group( [ f2, f3 ] )
+>> V4C(K,K1,K2)
+--
+phi		Pcgs([ f2, f3 ]) -> [ f3, f2*f3 ]
+Kv2,Kv3,Ku	[ f3 ]	[ f3, f2 ]	[ f2*f3 ]
+>>			K1		k				K2
+phi		Pcgs([ f2, f3 ]) -> [ f2*f3, f3 ]
+Kv2,Kv3,Ku	[ f2*f3 ]	[ f2*f3, f3 ]	[ f3 ]
+phi		Pcgs([ f2, f3 ]) -> [ f2, f2*f3 ]
+Kv2,Kv3,Ku	[ f2 ]	[ f2, f2*f3 ]	[ f2*f3 ]
+phi		Pcgs([ f2, f3 ]) -> [ f2*f3, f2 ]
+Kv2,Kv3,Ku	[ f2*f3 ]	[ f2*f3, f2 ]	[ f2 ]
+phi		Pcgs([ f2, f3 ]) -> [ f2, f3 ]
+Kv2,Kv3,Ku	[ f2 ]	[ f2, f3 ]	[ f3 ]
+phi		Pcgs([ f2, f3 ]) -> [ f3, f2 ]
+Kv2,Kv3,Ku	[ f3 ]	[ f3, f2 ]	[ f2 ]
+--------------------
+--------------------
+C2 x C2 Group( [ f1*f2, f3 ] )
+>> V4D(K,K1,K2)
+--
+phi		Pcgs([ f1*f2, f3 ]) -> [ f1*f2, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2 ]	[ f1*f2*f3 ]	[ f1*f2*f3 ]
+>>			K1			K2				K2
+phi		Pcgs([ f1*f2, f3 ]) -> [ f1*f2*f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f1*f2 ]	[ f1*f2 ]
+phi		Pcgs([ f1*f2, f3 ]) -> [ f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f3 ]	[ f1*f2*f3 ]	[ f1*f2*f3 ]
+phi		Pcgs([ f1*f2, f3 ]) -> [ f1*f2*f3, f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f3 ]	[ f3 ]
+phi		Pcgs([ f1*f2, f3 ]) -> [ f3, f1*f2 ]
+Kv2,Kv3,Ku	[ f3 ]	[ f1*f2 ]	[ f1*f2 ]
+phi		Pcgs([ f1*f2, f3 ]) -> [ f1*f2, f3 ]
+Kv2,Kv3,Ku	[ f1*f2 ]	[ f3 ]	[ f3 ]
 --------------------
 --------------------
 C2 x C2 Group( [ f1, f2*f3 ] )
+>> V4E(K,K1,K2)
 --
 phi		Pcgs([ f1, f2*f3 ]) -> [ f2*f3, f1*f2*f3 ]
 Kv2,Kv3,Ku	[ f2*f3 ]	[ f1*f2*f3 ]	[ f2*f3 ]
+>>			K1			K2				K1
 phi		Pcgs([ f1, f2*f3 ]) -> [ f1*f2*f3, f2*f3 ]
 Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f2*f3 ]	[ f1*f2*f3 ]
 phi		Pcgs([ f1, f2*f3 ]) -> [ f1, f1*f2*f3 ]
@@ -167,10 +161,30 @@ phi		Pcgs([ f1, f2*f3 ]) -> [ f2*f3, f1 ]
 Kv2,Kv3,Ku	[ f2*f3 ]	[ f1 ]	[ f2*f3 ]
 --------------------
 --------------------
+C2 x C2 Group( [ f1*f3, f2 ] )
+>> V4F(K,K1,K2)
+--
+phi		Pcgs([ f1*f3, f2 ]) -> [ f1*f3, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f1*f2*f3 ]	[ f1*f3 ]
+>>			K1				K1				K2
+phi		Pcgs([ f1*f3, f2 ]) -> [ f1*f2*f3, f1*f3 ]
+Kv2,Kv3,Ku	[ f1*f3 ]	[ f1*f3 ]	[ f1*f2*f3 ]
+phi		Pcgs([ f1*f3, f2 ]) -> [ f2, f1*f2*f3 ]
+Kv2,Kv3,Ku	[ f1*f2*f3 ]	[ f1*f2*f3 ]	[ f2 ]
+phi		Pcgs([ f1*f3, f2 ]) -> [ f1*f2*f3, f2 ]
+Kv2,Kv3,Ku	[ f2 ]	[ f2 ]	[ f1*f2*f3 ]
+phi		Pcgs([ f1*f3, f2 ]) -> [ f2, f1*f3 ]
+Kv2,Kv3,Ku	[ f1*f3 ]	[ f1*f3 ]	[ f2 ]
+phi		Pcgs([ f1*f3, f2 ]) -> [ f1*f3, f2 ]
+Kv2,Kv3,Ku	[ f2 ]	[ f2 ]	[ f1*f3 ]
+--------------------
+--------------------
 C2 x C2 Group( [ f1*f2, f2*f3 ] )
+>> V4G(K,K1,K2)
 --
 phi		Pcgs([ f1*f2, f2*f3 ]) -> [ f1*f2, f2*f3 ]
 Kv2,Kv3,Ku	[ f1*f2 ]	[ f2*f3 ]	[ f1*f3 ]
+>>			K1			K2			K*
 phi		Pcgs([ f1*f2, f2*f3 ]) -> [ f1*f2, f1*f3 ]
 Kv2,Kv3,Ku	[ f1*f2 ]	[ f1*f3 ]	[ f2*f3 ]
 phi		Pcgs([ f1*f2, f2*f3 ]) -> [ f1*f3, f2*f3 ]
@@ -183,52 +197,68 @@ phi		Pcgs([ f1*f2, f2*f3 ]) -> [ f2*f3, f1*f2 ]
 Kv2,Kv3,Ku	[ f2*f3 ]	[ f1*f2 ]	[ f1*f3 ]
 --------------------
 --------------------
-S3 Group( [ f4, f3 ] )
+C6 Group( [ f4, f1 ] )
+>> C6A(K)
 --
-phi		Pcgs([ f3, f4 ]) -> [ f3, f4 ]
-Kv2,Kv3,Ku	[ f4, f4^2 ]	[ f4, f3 ]	[ f4, f3 ]
---------------------
---------------------
-C6 Group( [ f4, f1*f2 ] )
---
-phi		Pcgs([ f1*f2, f4 ]) -> [ f1*f2, f4 ]
-Kv2,Kv3,Ku	[ f4, f1*f2 ]	[ f4, f4^2 ]	[ f4, f4^2 ]
---------------------
---------------------
-S3 Group( [ f4, f1*f3 ] )
---
-phi		Pcgs([ f1*f3, f4 ]) -> [ f1*f3, f4 ]
-Kv2,Kv3,Ku	[ f4, f4^2 ]	[ f4, f4^2 ]	[ f4, f1*f3 ]
+phi		Pcgs([ f1, f4 ]) -> [ f1, f4 ]
+Kv2,Kv3,Ku	[ f4, f1 ]	[ f4 ]	[ f4, f1 ]
+>>			k			K[2]			k
 --------------------
 --------------------
 C6 Group( [ f4, f2 ] )
+>> C6B(K)
 --
 phi		Pcgs([ f2, f4 ]) -> [ f2, f4 ]
-Kv2,Kv3,Ku	[ f4, f2 ]	[ f4, f2 ]	[ f4, f4^2 ]
+Kv2,Kv3,Ku	[ f4, f2 ]	[ f4, f2 ]	[ f4 ]
+>> 			k			k			K[2]
+--------------------
+--------------------
+C6 Group( [ f4, f1*f2 ] )
+>> C6C(K)
+--
+phi		Pcgs([ f1*f2, f4 ]) -> [ f1*f2, f4 ]
+Kv2,Kv3,Ku	[ f4, f1*f2 ]	[ f4 ]	[ f4 ]
+>>			k				K[2]			K[2]
+--------------------
+--------------------
+S3 Group( [ f4, f3 ] )
+>> S3A(K)
+--
+phi		Pcgs([ f3, f4 ]) -> [ f3, f4 ]
+Kv2,Kv3,Ku	[ f4 ]	[ f4, f3 ]	[ f4, f3 ]
+>>			K[2]	k			k
+--------------------
+--------------------
+S3 Group( [ f4, f1*f3 ] )
+>> S3B(K)
+--
+phi		Pcgs([ f1*f3, f4 ]) -> [ f1*f3, f4 ]
+Kv2,Kv3,Ku	[ f4 ]	[ f4 ]	[ f4, f1*f3 ]
+>>			K[2]	K[2]	k
 --------------------
 --------------------
 S3 Group( [ f4, f2*f3 ] )
+>> S3C(K)
 --
 phi		Pcgs([ f2*f3, f4 ]) -> [ f2*f3, f4 ]
-Kv2,Kv3,Ku	[ f4, f4^2 ]	[ f4, f2*f3 ]	[ f4, f4^2 ]
---------------------
---------------------
-C6 Group( [ f4, f1 ] )
---
-phi		Pcgs([ f1, f4 ]) -> [ f1, f4 ]
-Kv2,Kv3,Ku	[ f4, f1 ]	[ f4, f4^2 ]	[ f4, f1 ]
+Kv2,Kv3,Ku	[ f4 ]	[ f4, f2*f3 ]	[ f4 ]
+>> 			K[2]	k				K[2]
 --------------------
 --------------------
 S3 Group( [ f4, f1*f2*f3 ] )
+>> S3D(K)
 --
 phi		Pcgs([ f1*f2*f3, f4 ]) -> [ f1*f2*f3, f4 ]
-Kv2,Kv3,Ku	[ f4, f4^2 ]	[ f4, f4^2 ]	[ f4, f4^2 ]
+Kv2,Kv3,Ku	[ f4 ]	[ f4 ]	[ f4 ]
+>>			K[2]	K[2]	K[2]
 --------------------
 --------------------
 C2 x C2 x C2 Group( [ f1, f2, f3 ] )
+>> C2^3(K,K1,K2,K3)
 --
 phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f3, f2*f3 ]
-Kv2,Kv3,Ku	[ f2, f1*f3, f1*f2*f3 ]	[ f1*f3, f2*f3, f1*f2 ]	[ f2, f2*f3, f3 ]
+Kv2,Kv3,Ku	[ f2, f1*f3 ]	[ f1*f3, f2*f3 ]	[ f2, f3 ]
+>>			K1				K2					K3
 phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f3, f1*f2*f3 ]
 Kv2,Kv3,Ku	[ f2, f3, f2*f3 ]	[ f3, f1*f2*f3, f1*f2 ]	[ f2, f1*f2*f3, f1*f3 ]
 phi		Pcgs([ f1, f2, f3 ]) -> [ f2, f1*f2*f3, f3 ]
@@ -583,42 +613,12 @@ phi		Pcgs([ f1, f2, f3 ]) -> [ f2*f3, f2, f1*f2 ]
 Kv2,Kv3,Ku	[ f2*f3, f2, f3 ]	[ f2, f1*f2, f1 ]	[ f2*f3, f1*f2, f1*f3 ]
 --------------------
 --------------------
-D12 Group( [ f4, f2, f3 ] )
---
-phi		Pcgs([ f2, f3, f4 ]) -> [ f2, f2*f3, f4 ]
-Kv2,Kv3,Ku	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	[ f2, f2*f3, f4 ]	
-[ f2*f3, f4, f2*f3*f4, f4^2, f2*f3*f4^2 ]
-phi		Pcgs([ f2, f3, f4 ]) -> [ f2, f3, f4 ]
-Kv2,Kv3,Ku	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	[ f2, f3, f4 ]	
-[ f3, f4, f3*f4, f4^2, f3*f4^2 ]
---------------------
---------------------
-D12 Group( [ f4, f1, f3 ] )
---
-phi		Pcgs([ f1, f3, f4 ]) -> [ f1, f1*f3, f4 ]
-Kv2,Kv3,Ku	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]	
-[ f1*f3, f4, f1*f3*f4, f4^2, f1*f3*f4^2 ]	[ f1, f4, f1*f3 ]
-phi		Pcgs([ f1, f3, f4 ]) -> [ f1, f3, f4 ]
-Kv2,Kv3,Ku	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]	[ f3, f4, f3*f4, f4^2, f3*f4^2 ]	
-[ f1, f4, f3 ]
---------------------
---------------------
-D12 Group( [ f4, f1*f2, f3 ] )
---
-phi		Pcgs([ f1*f2, f3, f4 ]) -> [ f1*f2, f1*f2*f3, f4 ]
-Kv2,Kv3,Ku	[ f4, f1*f2, f4^2, f1*f2*f4, f1*f2*f4^2 ]	
-[ f1*f2*f3, f4, f1*f2*f3*f4, f4^2, f1*f2*f3*f4^2 ]	
-[ f1*f2*f3, f4, f1*f2*f3*f4, f4^2, f1*f2*f3*f4^2 ]
-phi		Pcgs([ f1*f2, f3, f4 ]) -> [ f1*f2, f3, f4 ]
-Kv2,Kv3,Ku	[ f4, f1*f2, f4^2, f1*f2*f4, f1*f2*f4^2 ]	
-[ f3, f4, f3*f4, f4^2, f3*f4^2 ]	[ f3, f4, f3*f4, f4^2, f3*f4^2 ]
---------------------
---------------------
 C6 x C2 Group( [ f4, f1, f2 ] )
+>> V4C3(K,K1,K2)
 --
 phi		Pcgs([ f1, f2, f4 ]) -> [ f2, f1*f2, f4 ]
-Kv2,Kv3,Ku	[ f2, f1*f2, f4 ]	[ f1*f2, f4, f1*f2*f4, f4^2, f1*f2*f4^2 ]	
-[ f2, f4, f2*f4, f4^2, f2*f4^2 ]
+Kv2,Kv3,Ku	[ f2, f1, f4 ]	[ f1*f2*f4 ]	[ f2*f4 ]
+>>			k				K1				K2
 phi		Pcgs([ f1, f2, f4 ]) -> [ f1*f2, f2, f4 ]
 Kv2,Kv3,Ku	[ f1*f2, f2, f4 ]	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	
 [ f1*f2, f4, f1*f2*f4, f4^2, f1*f2*f4^2 ]
@@ -636,33 +636,67 @@ Kv2,Kv3,Ku	[ f2, f1, f4 ]	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]
 [ f2, f4, f2*f4, f4^2, f2*f4^2 ]
 --------------------
 --------------------
-D12 Group( [ f4, f2, f1*f3 ] )
+D12 Group( [ f4, f1, f3 ] )
+>> D12A(K,K1)
 --
-phi		Pcgs([ f1*f3, f2, f4 ]) -> [ f1*f2*f3, f2, f4 ]
-Kv2,Kv3,Ku	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	
-[ f4, f1*f2*f3, f4^2, f1*f2*f3*f4, f1*f2*f3*f4^2 ]
-phi		Pcgs([ f1*f3, f2, f4 ]) -> [ f1*f3, f2, f4 ]
-Kv2,Kv3,Ku	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	
-[ f4, f1*f3, f4^2, f1*f3*f4, f1*f3*f4^2 ]
+phi		Pcgs([ f1, f3, f4 ]) -> [ f1, f1*f3, f4 ]
+Kv2,Kv3,Ku	[ f1*f4 ]	[ f1*f3, f4 ]	[ f1, f4, f3 ]
+>>			K[c]		K1				k
+phi		Pcgs([ f1, f3, f4 ]) -> [ f1, f3, f4 ]
+Kv2,Kv3,Ku	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]	[ f3, f4, f3*f4, f4^2, f3*f4^2 ]	
+[ f1, f4, f3 ]
+--------------------
+--------------------
+D12 Group( [ f4, f2, f3 ] )
+>> D12B(K,K1)
+--
+phi		Pcgs([ f2, f3, f4 ]) -> [ f2, f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f2*f4 ]	[ f2, f3, f4 ]	[ f2*f3, f4 ]
+>>			K[c]		k				K1
+phi		Pcgs([ f2, f3, f4 ]) -> [ f2, f3, f4 ]
+Kv2,Kv3,Ku	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	[ f2, f3, f4 ]	
+[ f3, f4, f3*f4, f4^2, f3*f4^2 ]
+--------------------
+--------------------
+D12 Group( [ f4, f1*f2, f3 ] )
+>> D12C(K,K1)
+--
+phi		Pcgs([ f1*f2, f3, f4 ]) -> [ f1*f2, f1*f2*f3, f4 ]
+Kv2,Kv3,Ku	[ f1*f2*f4 ]	[ f1*f2*f3, f4 ]	[ f1*f2*f3, f4 ]
+>>			K[c]			K1					K1
+phi		Pcgs([ f1*f2, f3, f4 ]) -> [ f1*f2, f3, f4 ]
+Kv2,Kv3,Ku	[ f4, f1*f2, f4^2, f1*f2*f4, f1*f2*f4^2 ]	
+[ f3, f4, f3*f4, f4^2, f3*f4^2 ]	[ f3, f4, f3*f4, f4^2, f3*f4^2 ]
 --------------------
 --------------------
 D12 Group( [ f4, f1, f2*f3 ] )
+>> D12D(K,K1)
 --
 phi		Pcgs([ f1, f2*f3, f4 ]) -> [ f1, f1*f2*f3, f4 ]
-Kv2,Kv3,Ku	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]	
-[ f4, f1*f2*f3, f4^2, f1*f2*f3*f4, f1*f2*f3*f4^2 ]	
-[ f1, f4, f1*f4, f4^2, f1*f4^2 ]
+Kv2,Kv3,Ku	[ f1*f4 ]	[ f4, f1*f2*f3 ]	[ f1*f4 ]
+>>			K[c]		K1					K[c]
 phi		Pcgs([ f1, f2*f3, f4 ]) -> [ f1, f2*f3, f4 ]
 Kv2,Kv3,Ku	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]	
 [ f4, f2*f3, f4^2, f2*f3*f4, f2*f3*f4^2 ]	[ f1, f4, f1*f4, f4^2, f1*f4^2 ]
 --------------------
 --------------------
+D12 Group( [ f4, f2, f1*f3 ] )
+>> D12E(K,K1)
+--
+phi		Pcgs([ f1*f3, f2, f4 ]) -> [ f1*f2*f3, f2, f4 ]
+Kv2,Kv3,Ku	[ f2*f4 ]	[ f2*f4 ]	[ f4, f1*f2*f3 ]
+>>			K[c]		K[c]		K1
+phi		Pcgs([ f1*f3, f2, f4 ]) -> [ f1*f3, f2, f4 ]
+Kv2,Kv3,Ku	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	[ f2, f4, f2*f4, f4^2, f2*f4^2 ]	
+[ f4, f1*f3, f4^2, f1*f3*f4, f1*f3*f4^2 ]
+--------------------
+--------------------
 D12 Group( [ f4, f1*f2, f1*f3 ] )
+>> D12F(K,K1)
 --
 phi		Pcgs([ f1*f2, f2*f3, f4 ]) -> [ f1*f2, f2*f3, f4 ]
-Kv2,Kv3,Ku	[ f4, f1*f2, f4^2, f1*f2*f4, f1*f2*f4^2 ]	
-[ f4, f2*f3, f4^2, f2*f3*f4, f2*f3*f4^2 ]	
-[ f4, f1*f3, f4^2, f1*f3*f4, f1*f3*f4^2 ]
+Kv2,Kv3,Ku	[ f1*f2*f4 ]	[ f4, f2*f3 ]	[ f4, f1*f3 ]
+>>			K[c]			K1				K**
 phi		Pcgs([ f1*f2, f2*f3, f4 ]) -> [ f1*f2, f1*f3, f4 ]
 Kv2,Kv3,Ku	[ f4, f1*f2, f4^2, f1*f2*f4, f1*f2*f4^2 ]	
 [ f4, f1*f3, f4^2, f1*f3*f4, f1*f3*f4^2 ]	
@@ -670,9 +704,11 @@ Kv2,Kv3,Ku	[ f4, f1*f2, f4^2, f1*f2*f4, f1*f2*f4^2 ]
 --------------------
 --------------------
 C2 x C2 x S3 Group( [ f4, f1, f2, f3 ] )
+>> C2D12(K,K1,K2)
 --
 phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1, f2, f1*f2*f3, f4 ]
 Kv2,Kv3,Ku	[ f1, f2, f4 ]	[ f2, f1*f2*f3, f4 ]	[ f1, f4, f1*f2*f3 ]
+>>			K[a]			K1						K2
 phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1, f1*f2, f2*f3, f4 ]
 Kv2,Kv3,Ku	[ f1, f1*f2, f4 ]	[ f1*f2, f2*f3, f4 ]	[ f1, f4, f2*f3 ]
 phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f2, f1, f1*f2*f3, f4 ]
