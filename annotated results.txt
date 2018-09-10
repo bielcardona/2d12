@@ -70,7 +70,7 @@ K1,K2,K3	[ f4 ]	[ f4 ]	[ f4 ]
 --------------------
 --------------------
 C2 x C2 Group( [ f1, f2 ] )
->> V4A(K,KA,KB)
+>> V4A(K,K',K'')
 >> 6 actions for each K.
 >> 1 action for each pair of different quadratic extensions in K.
 --
@@ -89,7 +89,7 @@ K1,K2,K3	[ f2 ]	[ f1, f2 ]	[ f1 ]
 --------------------
 --------------------
 C2 x C2 Group( [ f1, f3 ] )
->> V4B(K,KA,KB)
+>> V4B(K,K',K'')
 >> 6 actions for each K.
 >> 1 action for each pair of different quadratic extensions in K.
 --
@@ -108,7 +108,7 @@ K1,K2,K3	[ f1, f3 ]	[ f3 ]	[ f1 ]
 --------------------
 --------------------
 C2 x C2 Group( [ f2, f3 ] )
->> V4C(K,KA,KB)
+>> V4C(K,K',K'')
 >> 6 actions for each K.
 >> 1 action for each pair of different quadratic extensions in K.
 --
@@ -127,7 +127,7 @@ K1,K2,K3	[ f2 ]	[ f3 ]	[ f2, f3 ]
 --------------------
 --------------------
 C2 x C2 Group( [ f1*f2, f3 ] )
->> V4D(K,KA,KB)
+>> V4D(K,K',K'')
 >> 6 actions for each K.
 >> 1 action for each pair of different quadratic extensions in K.
 --
@@ -146,7 +146,7 @@ K1,K2,K3	[ f3 ]	[ f1*f2 ]	[ f3 ]
 --------------------
 --------------------
 C2 x C2 Group( [ f1, f2*f3 ] )
->> V4E(K,KA,KB)
+>> V4E(K,K',K'')
 >> 6 actions for each K.
 >> 1 action for each pair of different quadratic extensions in K.
 --
@@ -165,7 +165,7 @@ K1,K2,K3	[ f2*f3 ]	[ f2*f3 ]	[ f1 ]
 --------------------
 --------------------
 C2 x C2 Group( [ f2, f1*f3 ] )
->> V4F(K,KA,KB)
+>> V4F(K,K',K'')
 >> 6 actions for each K.
 >> 1 action for each pair of different quadratic extensions in K.
 --
@@ -184,7 +184,7 @@ K1,K2,K3	[ f1*f3 ]	[ f2 ]	[ f2 ]
 --------------------
 --------------------
 C2 x C2 Group( [ f1*f3, f2*f3 ] )
->> V4G(K,KA,KB)
+>> V4G(K,K',K'')
 >> 6 actions for each K.
 >> 1 action for each pair of different quadratic extensions in K.
 --
@@ -259,7 +259,7 @@ K1,K2,K3	[ f4 ]	[ f4 ]	[ f4 ]
 --------------------
 --------------------
 C2 x C2 x C2 Group( [ f1, f2, f3 ] )
->> C2^3(K,KA,KB,KC)
+>> C2^3(K,K',K'',K''')
 >> 168 actions for each K.
 >> 1 action for each triple of different quadratic extensions that generate K.
 --
@@ -602,7 +602,7 @@ K1,K2,K3	[ f1*f2, f2*f3 ]	[ f2, f3 ]	[ f1, f2 ]
 --------------------
 --------------------
 C6 x C2 Group( [ f1, f2, f4 ] )
->> V4C3(K,KA,KB)
+>> V4C3(K,K',K'')
 >> 6 actions for each K.
 >> 1 action for each pair of different quadratic extensions in K.
 --
@@ -621,9 +621,9 @@ K1,K2,K3	[ f2*f4 ]	[ f2, f1*f4 ]	[ f1*f4 ]
 --------------------
 --------------------
 D12 Group( [ f1, f3, f4 ] )
->> D12A(K,KA)
+>> D12A(K,K')
 >> 2 actions for each K.
->> 1 action for each quadratic extension KA in K with K/KA not cyclic.
+>> 1 action for each quadratic extension K' in K with K/K' not cyclic.
 --
 phi		Pcgs([ f1, f3, f4 ]) -> [ f1, f1*f3, f4 ]
 K1,K2,K3	[ f3, f1*f4 ]	[ f1*f4 ]	[ f4, f1*f3 ]
@@ -632,9 +632,9 @@ K1,K2,K3	[ f3, f1*f4 ]	[ f1*f4 ]	[ f3, f4 ]
 --------------------
 --------------------
 D12 Group( [ f2, f3, f4 ] )
->> D12B(K,KA)
+>> D12B(K,K')
 >> 2 actions for each K.
->> 1 action for each quadratic extension KA in K with K/KA not cyclic.
+>> 1 action for each quadratic extension K' in K with K/K' not cyclic.
 --
 phi		Pcgs([ f2, f3, f4 ]) -> [ f2, f2*f3, f4 ]
 K1,K2,K3	[ f4, f2*f3 ]	[ f2*f4 ]	[ f3, f2*f4 ]
@@ -643,9 +643,9 @@ K1,K2,K3	[ f3, f4 ]	[ f2*f4 ]	[ f3, f2*f4 ]
 --------------------
 --------------------
 D12 Group( [ f1*f2, f3, f4 ] )
->> D12C(K,KA)
+>> D12C(K,K')
 >> 2 actions for each K.
->> 1 action for each quadratic extension KA in K with K/KA not cyclic.
+>> 1 action for each quadratic extension K' in K with K/K' not cyclic.
 --
 phi		Pcgs([ f1*f2, f3, f4 ]) -> [ f1*f2, f1*f2*f3, f4 ]
 K1,K2,K3	[ f4, f1*f2*f3 ]	[ f1*f2*f4 ]	[ f4, f1*f2*f3 ]
@@ -654,9 +654,9 @@ K1,K2,K3	[ f3, f4 ]	[ f1*f2*f4 ]	[ f3, f4 ]
 --------------------
 --------------------
 D12 Group( [ f1, f2*f3, f4 ] )
->> D12D(K,KA)
+>> D12D(K,K')
 >> 2 actions for each K.
->> 1 action for each quadratic extension KA in K with K/KA not cyclic.
+>> 1 action for each quadratic extension K' in K with K/K' not cyclic.
 --
 phi		Pcgs([ f1, f2*f3, f4 ]) -> [ f1, f1*f2*f3, f4 ]
 K1,K2,K3	[ f1*f4 ]	[ f1*f4 ]	[ f4, f1*f2*f3 ]
@@ -665,9 +665,9 @@ K1,K2,K3	[ f1*f4 ]	[ f1*f4 ]	[ f4, f2*f3 ]
 --------------------
 --------------------
 D12 Group( [ f2, f1*f3, f4 ] )
->> D12E(K,KA)
+>> D12E(K,K')
 >> 2 actions for each K.
->> 1 action for each quadratic extension KA in K with K/KA not cyclic.
+>> 1 action for each quadratic extension K' in K with K/K' not cyclic.
 --
 phi		Pcgs([ f1*f3, f2, f4 ]) -> [ f1*f2*f3, f2, f4 ]
 K1,K2,K3	[ f4, f1*f2*f3 ]	[ f2*f4 ]	[ f2*f4 ]
@@ -676,9 +676,9 @@ K1,K2,K3	[ f4, f1*f3 ]	[ f2*f4 ]	[ f2*f4 ]
 --------------------
 --------------------
 D12 Group( [ f1*f2, f1*f3, f4 ] )
->> D12F(K,KA)
+>> D12F(K,K')
 >> 2 actions for each K.
->> 1 action for each quadratic extension KA in K with K/KA not cyclic.
+>> 1 action for each quadratic extension K' in K with K/K' not cyclic.
 --
 phi		Pcgs([ f1*f2, f2*f3, f4 ]) -> [ f1*f2, f2*f3, f4 ]
 K1,K2,K3	[ f4, f1*f3 ]	[ f1*f2*f4 ]	[ f4, f2*f3 ]
@@ -687,9 +687,9 @@ K1,K2,K3	[ f4, f2*f3 ]	[ f1*f2*f4 ]	[ f4, f1*f3 ]
 --------------------
 --------------------
 C2 x C2 x S3 Group( [ f1, f2, f3, f4 ] )
->> C2D12(K,KA,KB)
+>> C2D12(K,K',K'')
 >> 24 actions for each K.
->> 1 action for each pair of quadratic extensions KA,KB in K with Gal(K/KA.KB)=S3
+>> 1 action for each pair of quadratic extensions K',K'' in K with Gal(K/K'.K'')=S3
 --
 phi		Pcgs([ f1, f2, f3, f4 ]) -> [ f1, f2, f1*f2*f3, f4 ]
 K1,K2,K3	[ f1*f4, f2*f3 ]	[ f2, f1*f4 ]	[ f2*f4, f1*f2*f3 ]
